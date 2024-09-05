@@ -85,6 +85,49 @@ function (Controller,Device,JSONModel,Popover,Button,library) {
                 oPopover.openBy(oButton);
             });
         },
+        onAddNewProcessArea: function () {
+            this.getView().byId("idAddNewArea").setVisible(false);
+            this.getView().byId("idDialogBox").setVisible(false);
+            this.getView().byId("_IDGenHBox11").setVisible(false);
+            this.getView().byId("_IDField1").setVisible(false);
+            this.getView().byId("_IDField4").setVisible(false);
+            this.getView().byId("_IDField3").setVisible(false);
+            this.getView().byId("_IDField36").setVisible(false);
+            this.getView().byId("_IDField2").setVisible(false);
+            this.getView().byId("_IDAreaSelect").setVisible(false);
+            this.getView().byId("_IDAreaSelect").setVisible(false);
+            this.getView().byId("_IDField33").setVisible(false);
+            this.getView().byId("_IDField34").setVisible(false);
+            this.getView().byId("_IDGenComboBox10").setVisible(false);
+
+            this.getView().byId("_IDGenComboBox11").setVisible(false);
+            this.getView().byId("_IDField6").setVisible(false);
+            this.getView().byId("idEmptyRow").setVisible(false);
+            this.getView().byId("idAddingNewProcessAreaTable").setVisible(true);
+
+        },
+
+        onNewProcessBackBtnPress: function () {
+            this.getView().byId("idAddNewArea").setVisible(true);
+            this.getView().byId("idDialogBox").setVisible(true);
+            this.getView().byId("_IDGenHBox11").setVisible(true);
+            this.getView().byId("_IDField1").setVisible(true);
+            this.getView().byId("_IDField4").setVisible(true)
+            this.getView().byId("_IDField3").setVisible(true);
+            this.getView().byId("_IDField36").setVisible(true);
+            this.getView().byId("_IDField2").setVisible(true);
+            this.getView().byId("_IDAreaSelect").setVisible(true);
+            this.getView().byId("_IDAreaSelect").setVisible(true);
+            this.getView().byId("_IDField33").setVisible(true);
+            this.getView().byId("_IDField34").setVisible(true);
+            this.getView().byId("_IDGenComboBox10").setVisible(true);
+
+            this.getView().byId("_IDGenComboBox11").setVisible(true);
+            this.getView().byId("_IDField6").setVisible(true);
+            this.getView().byId("idEmptyRow").setVisible(true);
+            this.getView().byId("idAddingNewProcessAreaTable").setVisible(false);
+        },
+
 
 		
     });

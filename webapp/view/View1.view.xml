@@ -152,231 +152,309 @@
                 <pages>
                 
                     <ScrollContainer
-                        id="page1"
-                        horizontal="true"
-                        vertical="false"
+                        id="root2"
+                        horizontal="false"
+                        vertical="true"
                         height="100%"
-                        class="sapUiContent pages"
                     >
+                    <FlexBox
+                        id="idAddNewArea"
+                        justifyContent="End"
+                        class="sapUiSmallMarginTop NewProcessArea"
+                    >
+                        <Button
+                            id="idnewprocessArea"
+                            text=" Add New Process Area"
+                            press="onAddNewProcessArea"
+                            type="Success"
+                        />
+                    </FlexBox>
                         <HBox
-                            id="asdfg"
+                            id="idDialogBox"
                             justifyContent="SpaceBetween"
                             width="100%"
                             class="sapUiContent pages"
+                           
                         >
-                            <HBox id="_IDGenHBox1">
+                            <HBox id="_IDGenHBox11">
                                 <VBox
                                     id="idAssignslots"
                                     class="sapUiResponsiveMargin boxContainer"
                                 >
-                                    <Title
-                                        id="_IDHeadLabel"
-                                        text="Resource ID Generation"
-                                        class="sapUiSmallMarginTopHeading label"
-                                    />
-
-                                    <FlexBox
-                                        id="_IDField1"
-                                        justifyContent="SpaceBetween"
-                                        alignItems="Center"
-                                        class="sapUiSmallMarginTop"
-                                    >
-                                        <Label
-                                            id="idempID"
-                                            text="Resource ID:"
-                                            labelFor="idEmppInput"
-                                            required="true"
-                                            class="label"
-                                        />
-                                        <Input
-                                            id="idEmppInput"
-                                            placeholder="Enter Resource ID"
-                                            class="Inputs"
-                                        />
-                                    </FlexBox>
-
-                                    <FlexBox
-                                        id="_IDField2"
-                                        justifyContent="SpaceBetween"
-                                        alignItems="Center"
-                                        class="sapUiSmallMarginTop"
-                                    >
-                                        <Label
-                                            id="idArea"
-                                            text="Area:"
-                                            labelFor="idAreaInput"
-                                            required="true"
-                                            class="label"
-                                        />
-                                        <Input
-                                            id="idAreaInput"
-                                            placeholder="Enter Area"
-                                            class="Inputs"
-                                        />
-                                    </FlexBox>
-
-                                    <FlexBox
-                                        id="_IDField33"
-                                        justifyContent="SpaceBetween"
-                                        alignItems="Center"
-                                        class="sapUiSmallMarginTop"
-                                    >
-                                        <Label
-                                            id="idGroup"
-                                            text="Group:"
-                                            labelFor="idGroupInput"
-                                            required="true"
-                                            class="label"
-                                        />
-
-                                        <Input
-                                            id="idGroupInput"
-                                            placeholder="Enter Group"
-                                            class="Inputs"
-                                        />
-                                    </FlexBox>
-                                    <FlexBox
-                                        id="_IDField4"
-                                        justifyContent="SpaceBetween"
-                                        alignItems="Center"
-                                        class="sapUiSmallMarginTop"
-                                    >
-                                        <Label
-                                            id="idName"
-                                            text="Name:"
-                                            labelFor="idNameInput"
-                                            required="true"
-                                            class="label"
-                                        />
-
-                                        <Input
-                                            id="idNameInput"
-                                            placeholder="Enter Name"
-                                            class="Inputs"
-                                        />
-                                    </FlexBox>
-                                    <FlexBox
-                                        id="_IDField3"
-                                        justifyContent="SpaceBetween"
-                                        alignItems="Center"
-                                        class="sapUiSmallMarginTop"
-                                    >
-                                        <Label
-                                            id="idEmail"
-                                            text="Email:"
-                                            labelFor="idEmailInput"
-                                            required="true"
-                                            class="label"
-                                        />
-
-                                        <Input
-                                            id="idEmailInput"
-                                            placeholder="Enter Email"
-                                            class="Inputs"
-                                        />
-                                    </FlexBox>
-                                    <FlexBox
-                                        id="_IDField36"
-                                        justifyContent="SpaceBetween"
-                                        alignItems="Center"
-                                        class="sapUiSmallMarginTop"
-                                    >
-                                        <Label
-                                            id="idPhone"
-                                            text="Phone:"
-                                            labelFor="idPhoneInput"
-                                            required="true"
-                                            class="label"
-                                        />
-
-                                        <Input
-                                            id="idPhoneInput"
-                                            placeholder="Enter Phone Number"
-                                            class="Inputs"
-                                        />
-                                    </FlexBox>
-                                    <FlexBox
-                                        id="_IDField34"
-                                        justifyContent="SpaceBetween"
-                                        alignItems="Center"
-                                        class="sapUiSmallMarginTop"
-                                    >
-                                        <Label
-                                            id="idQueue"
-                                            text="Queue:"
-                                            labelFor="idQueueSelect"
-                                            required="true"
-                                            class="label"
-                                        />
-
-
-
-                                        <Select
-                                            class="Inputs"
-                                            id="parkingLotSelect"
-                                            width="11rem"
-                                            selectedKey=""
-                                            items=""
-                                        >
-                                            <core:Item
-                                                id="_IDGenItem4"
-                                                key=""
-                                                text=""
-                                            />
-                                        </Select>
-                                    </FlexBox>
-
-                                    <FlexBox
-                                        id="_IDField6"
-                                        justifyContent="Center"
-                                        class="sapUiSmallMarginTop"
-                                    >
-                                        <Button
-                                            id="idButtonApprove"
-                                            text="Approve"
-                                            type="Success"
-                                            press="onApprovePress"
-                                            class="SubmitBtnFromVendorPage"
-                                            width="auto"
-                                        />
-                                        <ToolbarSpacer
-                                            id="toolspacer"
-                                            width="10px"
-                                        />
-                                        <Button
-                                            id="idButtonReject"
-                                            text="Reject"
-                                            type="Reject"
-                                            icon="sap-icon://decline"
-                                            press="onResetPress"
-                                            class="ClearBtnFromVendorPage"
-                                            width="auto"
-                                        />
-                                    </FlexBox>
-
-                                    <Label id="idEmptyRow" />
+                                   <Title
+                                id="_IDHeadLabel"
+                                text="Admin page"
+                                class="sapUiSmallMarginTopHeading"
+                            />
+                            <FlexBox
+                                id="_IDField1"
+                                justifyContent="SpaceBetween"
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    id="idempID"
+                                    text="Employee ID:"
+                                    labelFor="idEmppInput"
+                                    required="true"
+                                />
+                                <Input
+                                    id="idEmppInput"
+                                    placeholder="Enter Employee ID"
+                                    class="Inputs"
+                                />
+                            </FlexBox>
+                            <FlexBox
+                                id="_IDField4"
+                                justifyContent="SpaceBetween"
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    id="idName"
+                                    text="Name:"
+                                    labelFor="idNameInput"
+                                    required="true"
+                                />
+                                <Input
+                                    id="idNameInput"
+                                    placeholder="Enter Name"
+                                    class="Inputs"
+                                />
+                            </FlexBox>
+                            <FlexBox
+                                id="_IDField3"
+                                justifyContent="SpaceBetween"
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    id="idEmail"
+                                    text="Email:"
+                                    labelFor="idEmailInput"
+                                />
+                                <Input
+                                    id="idEmailInput"
+                                    placeholder="Enter Email"
+                                    class="Inputs"
+                                />
+                            </FlexBox>
+                            <FlexBox
+                                id="_IDField36"
+                                justifyContent="SpaceBetween"
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    id="idPhone"
+                                    text="Phone:"
+                                    labelFor="idPhoneInput"
+                                    required="true"
+                                />
+                                <Input
+                                    id="idPhoneInput"
+                                    placeholder="Enter Phone"
+                                    class="Inputs"
+                                />
+                            </FlexBox>
+                            <FlexBox
+                                id="_IDField2"
+                                justifyContent="SpaceBetween"
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    id="idAreaLabel"
+                                    text="Process Area:"
+                                    labelFor="idAreaInput"
+                                    required="true"
+                                />
+                                 <!-- <MultiComboBox
+                    id="AreaSelect"
+                    class="Inputs"
+                    items="{path: '/ProcessAreaSet'}"
+                    selectionChange="onCheckBoxSelect"
+                     placeholder="Select Process Area from Dropdown.."
+                >
+                    <core:Item
+                        class="Inputs"
+                        id="_IDGenItem5"
+                        key="{Processarea}"
+                        text="{Processarea}"
+                    />
+                </MultiComboBox> -->
+                <ComboBox
+                                    id="_IDAreaSelect"
+                                    placeholder="Select Process area from Dropdown.."
+                                    visible="true"
+                                    class="Inputs"
+                                />
+                            </FlexBox>
+                            <FlexBox
+                                id="_IDField33"
+                                justifyContent="SpaceBetween"
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    id="idGroup"
+                                    text="Process Group:"
+                                    labelFor="idGroupInput"
+                                    required="true"
+                                />
+                                <ComboBox
+                                    id="_IDGenComboBoxGroup"
+                                    placeholder="Select Group from Dropdown.."
+                                    visible="true"
+                                    class="Inputs"
+                                />
+                           
+                            </FlexBox>
+                            <FlexBox
+                                id="_IDField34"
+                                justifyContent="SpaceBetween"
+                                alignItems="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Label
+                                    id="idQueue"
+                                    text="Queue:"
+                                    labelFor="idQueueSelect"
+                                    required="true"
+                                />
+                                <ComboBox
+                                    id="_IDGenComboBox10"
+                                    placeholder="Select Queue from Dropdown.."
+                                    visible="true"
+                                    class="Inputs"
+                                />
+                                <ComboBox
+                                    id="_IDGenComboBox11"
+                                    placeholder="Select Queue from Dropdown.."
+                                    visible="false"
+                                    class="Inputs"
+                                >
+                                 
+                                </ComboBox>
+                               
+                            </FlexBox>
+                            <FlexBox
+                                id="_IDField6"
+                                justifyContent="Center"
+                                class="sapUiSmallMarginTop"
+                            >
+                                <Button
+                                    id="idButtonApprove"
+                                    text="Approve"
+                                    type="Unstyled"
+                                    press="onApprovePress"
+                                    class="SubmitBtnFromVendorPage"
+                                    width="auto"
+                                />
+                               
+                            </FlexBox>
+                            <Label id="idEmptyRow" />
                                 </VBox>
                             </HBox>
-                            <!-- <HBox id="idhbox" class="image">
-                                <Image
-                                    id="idiimage"
-                                    src="../image/resourceIdGeneration.gif"
-                                    width="300px"
-                                    height="300px"
-                                    class="person"
+                            </HBox>
+ 
+               
+                   
+                    <Table
+                    id="idAddingNewProcessAreaTable"
+                    items="{localModel>/items}"
+                    visible="false"
+                >
+               
+                    <headerToolbar>
+                     
+                        <OverflowToolbar id="idBoorertyksTableHeader">
+                        <Button
+                                id="idNewProcessBackButton"
+                                icon="sap-icon://nav-back"
+                                press="onNewProcessBackBtnPress"
+                               
+                            />
+                            <Title id="Ijgbajsg23" />
+                            <ToolbarSpacer id="idTabledsweHeaderSpacer" />
+                            <!-- New Button -->
+                           
+                            <Button
+                                id="idNewProcessButton"
+                                icon="sap-icon://add"
+                                tooltip="Add New Process"
+                                text="Add"
+                                type="Success"
+                                press="onNewPress"
+                            />
+                            <Button
+                                id="idSubmitNewProcess"
+                                type="Emphasized"
+                                text="Submit"
+                                icon="sap-icon://save"
+                                tooltip="Submit new Process"
+                                press="onBatchSave"
+                            />
+                            <Button
+                                id="idCloseNewProcess"
+                                type="Negative"
+                                icon="sap-icon://decline"
+                                press="onClosePress"
+                            />
+                        </OverflowToolbar>
+                    </headerToolbar>
+                    <columns>
+                        <Column
+                            id="idGenColumnNew"
+                            visible="false"
+                        >
+                            <Label
+                                id="idLabelProcess"
+                                text="Processid"
+                            />
+                        </Column>
+                        <Column id="idProcessAreaClmn">
+                            <Label
+                                id="idProcessAreaLabel"
+                                text="Processarea"
+                            />
+                        </Column>
+                        <Column id="idProcessGroupClmn">
+                            <Label
+                                id="idProcessGroupLabel"
+                                text="Processgroup"
+                            />
+                        </Column>
+                        <Column id="idQueueClmn">
+                            <Label
+                                id="idQueueLabel"
+                                text="Queue"
+                            />
+                        </Column>
+                    </columns>
+                    <items>
+                        <ColumnListItem id="idClmnListItem">
+                            <cells>
+                                <Input
+                                    id="idInputProcessId"
+                                    value="{localModel>Processid}"
                                 />
-                            </HBox> -->
-
-                        </HBox>
-                         <!-- <VBox id="idhbox" class="image">
-                                <Image
-                                    id="idiimage"
-                                    src="../image/resourceIdGeneration.gif"
-                                    width="200px"
-                                    height="200px"
-                                    class="person"
+                                <Input
+                                    id="IdInputProcessArea"
+                                    value="{localModel>Processarea}"
                                 />
-                            </VBox> -->
+                                <Input
+                                    id="IdInputProcessGroup"
+                                    value="{localModel>Processgroup}"
+                                />
+                                <Input
+                                    id="IdInputQueue"
+                                    value="{localModel>Queue}"
+                                />
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
                     </ScrollContainer>
 
                     <ScrollContainer
